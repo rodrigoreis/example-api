@@ -1,9 +1,10 @@
-import express, { Express, ErrorRequestHandler, Request, Response, NextFunction } from 'express';
-import { Port } from './config/environment';
-import logger from './logging/logger';
+import express from 'express';
+import { Environment } from './config';
+import { Logger } from './logging';
 
-const app: Express = express();
+const app: express.Express = express();
+const port: number = Environment.getPort();
 
-app.listen(Port, () => {
-    logger.info(`⚡️[server]: Server is running at https://localhost:${Port}`)
+app.listen(port, () => {
+    Logger.info(`⚡️[server]: Server is running at :::`, port)
 });
