@@ -1,7 +1,7 @@
 import winston from 'winston';
 import { LoggerFormatter } from './loggerFormatter';
 
-const messageFormatter: LoggerFormatter = {
+const messageLoggerFormatter: LoggerFormatter = {
     apply(): winston.Logform.Format {
         return winston.format.printf(
             info => `[${info.level}] ${info.timestamp} ${info.message}`
@@ -9,4 +9,4 @@ const messageFormatter: LoggerFormatter = {
     }
 };
 
-export default messageFormatter;
+export default messageLoggerFormatter;

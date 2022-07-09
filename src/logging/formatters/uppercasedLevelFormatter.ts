@@ -1,7 +1,7 @@
 import winston from 'winston';
 import { LoggerFormatter } from './loggerFormatter';
 
-const uppercasedLevelFormatter: LoggerFormatter = {
+const uppercasedLevelLoggerFormatter: LoggerFormatter = {
     apply(): winston.Logform.Format {
         return winston.format(info => {
             info.level = info.level.toUpperCase()
@@ -10,4 +10,4 @@ const uppercasedLevelFormatter: LoggerFormatter = {
     }
 };
 
-export default uppercasedLevelFormatter;
+export default uppercasedLevelLoggerFormatter;

@@ -1,7 +1,7 @@
 import winston from 'winston';
 import { LoggerFormatter } from './loggerFormatter';
 
-const timestampFormatter: LoggerFormatter = {
+const timestampLoggerFormatter: LoggerFormatter = {
     apply(): winston.Logform.Format {
         return winston.format.timestamp({
             format: "YYYY-MM-DD HH:mm:ss"
@@ -9,4 +9,4 @@ const timestampFormatter: LoggerFormatter = {
     }
 };
 
-export default timestampFormatter;
+export default timestampLoggerFormatter;

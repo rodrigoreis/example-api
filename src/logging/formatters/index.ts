@@ -1,6 +1,6 @@
-import uppercasedLevelFormatter from './uppercasedLevelFormatter';
-import timestampFormatter from './timestampFormatter';
-import colorizeFormatter from './colorizeFormatter';
-import messageFormatter from './messageFormatter';
+import uppercasedLevelLoggerFormatter from './uppercasedLevelFormatter';
+import timestampLoggerFormatter from './timestampFormatter';
+import colorizeLoggerFormatter from './colorizeFormatter';
+import messageLoggerFormatter from './messageFormatter';
 
-export { uppercasedLevelFormatter, timestampFormatter, colorizeFormatter, messageFormatter }
+export { uppercasedLevelLoggerFormatter, timestampLoggerFormatter, colorizeLoggerFormatter, messageLoggerFormatter }

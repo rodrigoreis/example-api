@@ -8,7 +8,7 @@ addColors({
     debug: 'green',
 });
 
-const colorizeFormatter: LoggerFormatter = {
+const colorizeLoggerFormatter: LoggerFormatter = {
     apply(): winston.Logform.Format {
         return winston.format.colorize({
             all: true
@@ -16,4 +16,4 @@ const colorizeFormatter: LoggerFormatter = {
     }
 };
 
-export default colorizeFormatter;
+export default colorizeLoggerFormatter;
